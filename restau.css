@@ -1,0 +1,344 @@
+*	{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	}
+button {
+		background: black;
+		color: white;
+		border-radius: 10px;
+}
+button:hover, .header ul li:hover {
+			background: white;
+			color: black;
+			border:1px solid black;
+}
+ a 	{
+		text-decoration:none;
+		color: black;
+}
+
+header	{
+		position: ;
+		width:100%;
+}
+header .header	{
+		background: lightgray;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+}
+.header h3	{
+			color: black;
+			font-size: 2rem;
+			text-align:center;
+			cursor: pointer;
+}
+.header img	{
+			width: 70px;
+			height: 70px;
+			border-radius: 30px;
+			margin: 10px;
+}
+.header ul	{
+			display: flex;
+			cursor: pointer;
+}
+.header ul li	{
+				list-style: none;
+				font-size: 1.3rem;
+				margin: auto 10px;
+				background: black;
+				color: white;
+				padding: 15px;
+				border-radius: 20px;
+				text-align: center;
+}
+.button 	{
+			display: grid;
+			place-items:center;
+			text-align:center;
+			
+}
+.button button	{
+				width: 20%;
+				min-height: 50px;
+				margin: 30px;
+				padding: 35px auto;
+				font-size: 1.2rem;
+				text-align:center;
+				transition: 2s;
+}
+.button button a 	{
+					color:lightgray;
+}
+.button button a:hover {
+						color:black;
+}
+
+.selection	{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin: 20px;
+}
+.selection label	{
+					font-size:1.7rem;
+}
+.selection select	{
+					font-size: 1.2rem;
+					margin: 5px;
+					padding: 12px;
+}
+.selection select option	{
+							margin: 15px;
+}
+.image-container {
+				 display:flex;
+				 justify-content:center;
+				 align-items:center;
+				 flex-wrap:wrap;
+				 width:100%;
+}
+
+.image-div	{
+			display:block;
+			width:20%;
+			height:100%;
+			margin:10px;
+			padding: 30px;
+			background:green;
+			text-align:center;
+			border-radius: 30px;
+}
+.theclass {
+			position:absolute;
+			top:0;
+			bottom:0;
+			width:100%;
+			background: rgba(150,150,250,0.5);
+}
+.other-div	{
+			display:none;
+			position:fixed;
+			top:0;
+			bottom:0;
+			width:100%;
+			height:100vh;
+			margin:10px;
+			padding: 30px;
+			background: rgba(0,0,0,0.8);
+			text-align:center;
+			border-radius: 30px;
+			color: white;
+			font-weight:bold;
+}
+
+.image-div img {
+				width:90%;
+				height:300px;
+				border-radius: 30px;
+}
+.other-div img	{
+				width:70%;
+				height:50%;
+				border-radius: 30px;
+}
+.image-div h1	{
+				text-align:center;
+				font-size: 2.2rem;
+				padding:10px;
+}
+.image-div p	{
+				font-size: 1.5rem;
+				padding:10px;
+}
+.image-div h3	{
+				font-size: 1.2rem;
+				padding:10px;
+}
+.other-div h1 {
+				font-size:5rem;
+}
+.other-div button {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:auto;
+	padding:40px;
+	margin-top:75px;
+	font-size:2rem;
+	width: 50%;
+}
+.remove {
+		position:absolute;
+		right:30px;
+		cursor:pointer;
+}
+.des 		{
+			font-size:2rem;
+			text-align:center;
+			margin-top: 100px;
+}
+
+.whatwedo	{
+			margin-top:50px;
+			font-size:2rem;
+			color:gray;
+			padding:20px;
+}
+.whatwedo p	{
+				padding:1px;
+}
+.whatwedo h2	{
+				margin:90px auto 20px auto;
+				color:black;
+}
+.selections	{
+			display:flex;
+}
+.selections select {
+					width: 25%;
+					margin:5px;
+					padding:20px;
+					font-size:1rem;
+}
+.selections select option	{
+					font-size: 1.1rem;
+					gap:2rem;
+					color:gray;
+}
+.display-image	{
+				width: 100%;
+				height:90vh;
+				overflow: hidden;
+				margin: auto;
+				border-radius:10px;		
+				margin-top:100px;
+				border:2px solid red;
+}
+.displayimage {
+				display:flex;
+				flex-direction:row;
+				width:100%;
+				height:100%;
+}
+.displayimage img	{
+					width:100%;
+					height:100%;
+					border-radius: 7px;
+}
+.buttons	{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			position:relative;
+			top:-30px;
+}
+.buttons div {
+			padding-left:15px;
+			border: 2px solid white;
+			text-align: center;
+			margin-left:10px;
+			background: black;
+			width:50px;
+			height:15px;
+}
+.buttons div:hover {
+					background:white;
+}
+.blocker  {
+	display:flex;
+}
+.away {
+	display:none;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1280px)
+ {
+.header button {							
+}
+.image-div	{
+			width:30%;
+}
+.image-div h1	{
+				text-align:center;
+				font-size: 2rem;
+				padding:10px;
+}
+ }
+
+
+
+
+
+
+
+@media only screen and (max-width:1024px)
+ {
+.header button {							
+}
+.image-div	{
+			width:40%;
+}
+
+
+ }
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ @media only screen and (max-width:768px)
+ {
+.header h3 {
+				font-size: 1.5rem;			
+}
+.header ul li{
+				 padding: 10px;
+				 font-size: 1rem;
+}
+.image-div	{
+				width:100%;		
+}
+.whatwedo p	{
+				text-align:justify;
+}
+.selections	{
+			display:flex;
+			flex-direction:column;
+}
+.selections select {
+					width: 100%;
+}
+.display-image	{
+				display:flex;
+				width:90%;
+				height:600px;
+							
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
