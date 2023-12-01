@@ -1,0 +1,198 @@
+html	{
+	scroll-behavior:smooth;
+}
+*	{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	}
+.selection	{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin: 20px;
+}
+.selection label	{
+					font-size:1.7rem;
+}
+.selection select	{
+					font-size: 1.2rem;
+					margin: 5px;
+					padding: 12px;
+}
+.selection select option	{
+							margin: 15px;
+}
+
+.image-container, .other-container {
+				 display:flex;
+				 justify-content:center;
+				 align-items:center;
+				 flex-wrap:wrap;
+				 width:100%;
+}
+.image-div	{
+			display:block;
+			width:20%;
+			height:100%;
+			margin:10px;
+			background:lightblue;
+			text-align:center;
+			border-radius: 30px;
+}
+.image-div h1	{
+				text-align:center;
+				font-size: 2.2rem;
+				padding:10px;
+}
+.image-div p	{
+				font-size: 1.5rem;
+				padding:10px;
+}
+.image-div img {
+				width:90%;
+				height:300px;
+				border-radius: 30px;
+				margin-top:15px;
+}
+.image-div h3	{
+				font-size: 1.2rem;
+				padding:10px;
+}
+
+.other-div	{
+			display:none;
+			position:fixed;
+			top:0;
+			bottom:0;
+			width:100%;
+			height:100vh;
+			padding: 30px;
+			background: rgba(0,0,0,0.8);
+			text-align:center;
+			color: white;
+			font-weight:bold;
+}
+.other-div img	{
+				width:50%;
+				height:60%;
+				border-radius: 30px;
+				object-fit:fill;
+}
+.other-div button {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:75px;
+				font-size:2rem;
+				width: 30%;
+				background: black;
+				color: white;
+				border-radius: 10px;
+}
+.other-div button:hover{
+			background: white;
+			color: black;
+			border:1px solid black;
+}
+.other-div h1 {
+				font-size:5rem;
+}
+.other-div p	{
+				font-size: 1.5rem;
+				padding:10px;
+				line-height:40px;
+}
+.remove {
+		position:absolute;
+		right:30px;
+		cursor:pointer;
+}
+
+
+
+/*
+@media only screen and (max-width:1280px)
+ {
+ }
+*/
+
+
+
+@media only screen and (max-width:1024px)
+ {
+.image-div	{
+			width:40%;
+}
+.other-div img	{
+				width:75%;
+				height:40%;
+				border-radius: 30px;
+				object-fit:fill;
+}
+.other-div button {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:70px;
+				margin-bottom:10px;
+				font-size:1.5rem;
+				width: 70%;
+}
+  }
+ 
+
+ 
+ 
+ 
+ @media only screen and (max-width:768px)
+ {
+.image-div	{
+				width:100%;		
+}
+
+.other-div	{
+			display:none;
+			position:fixed;
+			top:0;
+			bottom:0;
+			width:100%;
+			height:100vh;
+			padding: 30px;
+			background: rgba(0,0,0,0.8);
+			text-align:center;
+			color: white;
+			font-weight:bold;
+			box-sizing:border-box;
+}
+.other-div button {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:70px;
+				margin-bottom:10px;
+				font-size:1.3rem;
+				width: 50%;
+}
+.other-div img	{
+				width:75%;
+				height:40%;
+				border-radius: 30px;
+				object-fit:fill;
+}
+	}
+
+
+
+
+
+
+
+
+

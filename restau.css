@@ -1,28 +1,4 @@
-html	{
-	scroll-behavior:smooth;
-}
-*	{
-	box-sizing:border-box;
-	padding: 0;
-	margin: 0;
-	}
-button {
-		background: black;
-		color: white;
-		border-radius: 10px;
-}
-button:hover, .header ul li:hover {
-			background: white;
-			color: black;
-			border:1px solid black;
-}
- a 	{
-		text-decoration:none;
-		color: black;
-}
-
 header	{
-		position: ;
 		width:100%;
 }
 header .header	{
@@ -60,131 +36,40 @@ header .header	{
 				border-radius: 20px;
 				text-align: center;
 }
+ a 	{
+		text-decoration:none;
+		color: black;
+}
+.header ul li:hover {
+			background: white;
+			color: black;
+			border:1px solid black;
+			transition:1s;
+}
+
 .button 	{
 			display: grid;
 			place-items:center;
-			text-align:center;
-			
+			text-align:center;	
 }
 .button button	{
 				width: 100%;
 				min-height: 50px;
+				background: black;
+				color: white;
 				margin: 30px;
 				padding: 35px auto;
 				font-size: 1.2rem;
 				text-align:center;
+				border-radius: 10px;
 				transition: 2s;
 }
-.button a button 	{
-					color:lightgray;
-}
-.button button a:hover {
-						color:black;
-}
-
-.selection	{
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			margin: 20px;
-}
-.selection label	{
-					font-size:1.7rem;
-}
-.selection select	{
-					font-size: 1.2rem;
-					margin: 5px;
-					padding: 12px;
-}
-.selection select option	{
-							margin: 15px;
-}
-.image-container, .other-container {
-				 display:flex;
-				 justify-content:center;
-				 align-items:center;
-				 flex-wrap:wrap;
-				 width:100%;
+.button button:hover {
+			background: white;
+			color: black;
+			border:1px solid black;
 }
 
-.image-div	{
-			display:block;
-			width:20%;
-			height:100%;
-			margin:10px;
-			background:lightblue;
-			text-align:center;
-			border-radius: 30px;
-}
-.theclass {
-			position:absolute;
-			top:0;
-			bottom:0;
-			width:100%;
-			background: rgba(150,150,250,0.5);
-}
-.other-div	{
-			display:none;
-			position:fixed;
-			top:0;
-			bottom:0;
-			width:100%;
-			height:100vh;
-			padding: 30px;
-			background: rgba(0,0,0,0.8);
-			text-align:center;
-			color: white;
-			font-weight:bold;
-}
-
-.image-div img {
-				width:90%;
-				height:300px;
-				border-radius: 30px;
-				margin-top:15px;
-}
-.other-div img	{
-				width:50%;
-				height:60%;
-				border-radius: 30px;
-				object-fit:fill;
-}
-.image-div h1	{
-				text-align:center;
-				font-size: 2.2rem;
-				padding:10px;
-}
-.image-div p	{
-				font-size: 1.5rem;
-				padding:10px;
-}
-.other-div p	{
-				font-size: 1.5rem;
-				padding:10px;
-				line-height:40px;
-}
-.image-div h3	{
-				font-size: 1.2rem;
-				padding:10px;
-}
-.other-div h1 {
-				font-size:5rem;
-}
-.other-div button {
-				display:flex;
-				justify-content:center;
-				align-items:center;
-				margin:auto;
-				padding:20px;
-				margin-top:75px;
-				font-size:2rem;
-				width: 30%;
-}
-.remove {
-		position:absolute;
-		right:30px;
-		cursor:pointer;
-}
 .des 		{
 			font-size:2rem;
 			text-align:center;
@@ -218,6 +103,36 @@ header .header	{
 					gap:2rem;
 					color:gray;
 }
+.scrolls	{
+					display:flex;
+					margin-top:10%;
+					border:2px solid black;
+					overflow:hidden;
+}
+.scrolls img{
+					width:33.4%;
+}
+
+
+
+
+
+
+
+
+
+/*
+.theclass {
+			position:absolute;
+			top:0;
+			bottom:0;
+			width:100%;
+			background: rgba(150,150,250,0.5);
+}
+
+
+
+
 .buttons	{
 			display:flex;
 			justify-content:center;
@@ -243,28 +158,11 @@ header .header	{
 .away {
 	display:none;
 }
-.scrolls	{
-			display:flex;
-			flex-direction:row;
-			overflow:hidden;
-			height:400px;
-			margin-top:10%;
-			overflow:hidden;
-			width:100vw;
-			padding:10px;
-}
-.scrolls img {
-	width:26%;
-}
-
-
-
-
-/*
-@media only screen and (max-width:1280px)
- {
- }
 */
+
+
+
+
 
 
 
@@ -274,41 +172,10 @@ header .header	{
  {
 .header button {							
 }
-.image-div	{
-			width:40%;
+.scrolls img{
+					width:50%;
 }
-.other-div img	{
-				width:75%;
-				height:40%;
-				border-radius: 30px;
-				object-fit:fill;
-}
-.other-div button {
-				display:flex;
-				justify-content:center;
-				align-items:center;
-				margin:auto;
-				padding:20px;
-				margin-top:70px;
-				margin-bottom:10px;
-				font-size:1.5rem;
-				width: 70%;
-}
-/*
-.scrolls	{
-			display:flex;
-			flex-direction:row;
-			height:400px;
-			
-			padding:10px;
-}
-.scrolls img {
-	width:50%;
-}
-*/
  }
- 
-
  
  
  
@@ -321,9 +188,6 @@ header .header	{
 				 padding: 10px;
 				 font-size: 1rem;
 }
-.image-div	{
-				width:100%;		
-}
 .whatwedo p	{
 				text-align:justify;
 }
@@ -334,65 +198,9 @@ header .header	{
 .selections select {
 					width: 100%;
 }
-.display-image	{
-				display:flex;
-				width:90%;
-				height:600px;			
+.scrolls img{
+					width:100%;
 }
-.other-div	{
-			display:none;
-			position:fixed;
-			top:0;
-			bottom:0;
-			width:100%;
-			height:100vh;
-			padding: 30px;
-			background: rgba(0,0,0,0.8);
-			text-align:center;
-			color: white;
-			font-weight:bold;
-			box-sizing:border-box;
-}
-.other-div button {
-				display:flex;
-				justify-content:center;
-				align-items:center;
-				margin:auto;
-				padding:20px;
-				margin-top:70px;
-				margin-bottom:10px;
-				font-size:1.3rem;
-				width: 50%;
-}
-.other-div img	{
-				width:75%;
-				height:40%;
-				border-radius: 30px;
-				object-fit:fill;
-}
-/*
-.scrolls	{
-			display:flex;
-			flex-direction:row;
-			height:500px;
-			padding:10px;
-			overflow:scroll;
-			overflow-y:hidden;
-			position:relative;
-}
-.scrolls img {
-	width:450px;
-}
-*/
+
 
  }
-
-
-
-
-
-
-
-
-
-
