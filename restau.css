@@ -218,20 +218,6 @@ header .header	{
 					gap:2rem;
 					color:gray;
 }
-.display-image	{
-				
-}
-.displayimage {
-			display:flex;
-			width:100%;
-			height:500px;
-				
-}
-.displayimage img	{
-			width:100%;
-			height:100%;
-					
-}
 .buttons	{
 			display:flex;
 			justify-content:center;
@@ -257,27 +243,28 @@ header .header	{
 .away {
 	display:none;
 }
+.scrolls	{
+			display:flex;
+			flex-direction:row;
+			overflow:hidden;
+			height:400px;
+			margin-top:10%;
+			overflow:hidden;
+			width:100vw;
+			padding:10px;
+}
+.scrolls img {
+	width:26%;
+}
 
 
 
 
-
-
+/*
 @media only screen and (max-width:1280px)
  {
-.header button {							
-}
-.image-div	{
-			width:30%;
-}
-.image-div h1	{
-				text-align:center;
-				font-size: 2rem;
-				padding:10px;
-}
  }
-
-
+*/
 
 
 
@@ -307,9 +294,18 @@ header .header	{
 				font-size:1.5rem;
 				width: 70%;
 }
-
-
-
+/*
+.scrolls	{
+			display:flex;
+			flex-direction:row;
+			height:400px;
+			
+			padding:10px;
+}
+.scrolls img {
+	width:50%;
+}
+*/
  }
  
 
@@ -374,6 +370,20 @@ header .header	{
 				border-radius: 30px;
 				object-fit:fill;
 }
+/*
+.scrolls	{
+			display:flex;
+			flex-direction:row;
+			height:500px;
+			padding:10px;
+			overflow:scroll;
+			overflow-y:hidden;
+			position:relative;
+}
+.scrolls img {
+	width:450px;
+}
+*/
 
  }
 
