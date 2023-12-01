@@ -1,3 +1,6 @@
+html	{
+	scroll-behavior:smooth;
+}
 *	{
 	box-sizing:border-box;
 	padding: 0;
@@ -64,7 +67,7 @@ header .header	{
 			
 }
 .button button	{
-				width: 20%;
+				width: 100%;
 				min-height: 50px;
 				margin: 30px;
 				padding: 35px auto;
@@ -72,7 +75,7 @@ header .header	{
 				text-align:center;
 				transition: 2s;
 }
-.button button a 	{
+.button a button 	{
 					color:lightgray;
 }
 .button button a:hover {
@@ -96,7 +99,7 @@ header .header	{
 .selection select option	{
 							margin: 15px;
 }
-.image-container {
+.image-container, .other-container {
 				 display:flex;
 				 justify-content:center;
 				 align-items:center;
@@ -109,8 +112,7 @@ header .header	{
 			width:20%;
 			height:100%;
 			margin:10px;
-			padding: 30px;
-			background:green;
+			background:lightblue;
 			text-align:center;
 			border-radius: 30px;
 }
@@ -128,11 +130,9 @@ header .header	{
 			bottom:0;
 			width:100%;
 			height:100vh;
-			margin:10px;
 			padding: 30px;
 			background: rgba(0,0,0,0.8);
 			text-align:center;
-			border-radius: 30px;
 			color: white;
 			font-weight:bold;
 }
@@ -141,11 +141,13 @@ header .header	{
 				width:90%;
 				height:300px;
 				border-radius: 30px;
+				margin-top:15px;
 }
 .other-div img	{
-				width:70%;
-				height:50%;
+				width:50%;
+				height:60%;
 				border-radius: 30px;
+				object-fit:fill;
 }
 .image-div h1	{
 				text-align:center;
@@ -156,6 +158,11 @@ header .header	{
 				font-size: 1.5rem;
 				padding:10px;
 }
+.other-div p	{
+				font-size: 1.5rem;
+				padding:10px;
+				line-height:40px;
+}
 .image-div h3	{
 				font-size: 1.2rem;
 				padding:10px;
@@ -164,14 +171,14 @@ header .header	{
 				font-size:5rem;
 }
 .other-div button {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	margin:auto;
-	padding:40px;
-	margin-top:75px;
-	font-size:2rem;
-	width: 50%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:75px;
+				font-size:2rem;
+				width: 30%;
 }
 .remove {
 		position:absolute;
@@ -212,24 +219,18 @@ header .header	{
 					color:gray;
 }
 .display-image	{
-				width: 100%;
-				height:90vh;
-				overflow: hidden;
-				margin: auto;
-				border-radius:10px;		
-				margin-top:100px;
-				border:2px solid red;
+				
 }
 .displayimage {
-				display:flex;
-				flex-direction:row;
-				width:100%;
-				height:100%;
+			display:flex;
+			width:100%;
+			height:500px;
+				
 }
 .displayimage img	{
-					width:100%;
-					height:100%;
-					border-radius: 7px;
+			width:100%;
+			height:100%;
+					
 }
 .buttons	{
 			display:flex;
@@ -289,15 +290,28 @@ header .header	{
 .image-div	{
 			width:40%;
 }
+.other-div img	{
+				width:75%;
+				height:40%;
+				border-radius: 30px;
+				object-fit:fill;
+}
+.other-div button {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:70px;
+				margin-bottom:10px;
+				font-size:1.5rem;
+				width: 70%;
+}
+
 
 
  }
  
-
-
-
-
-
 
  
  
@@ -327,8 +341,38 @@ header .header	{
 .display-image	{
 				display:flex;
 				width:90%;
-				height:600px;
-							
+				height:600px;			
+}
+.other-div	{
+			display:none;
+			position:fixed;
+			top:0;
+			bottom:0;
+			width:100%;
+			height:100vh;
+			padding: 30px;
+			background: rgba(0,0,0,0.8);
+			text-align:center;
+			color: white;
+			font-weight:bold;
+			box-sizing:border-box;
+}
+.other-div button {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				margin:auto;
+				padding:20px;
+				margin-top:70px;
+				margin-bottom:10px;
+				font-size:1.3rem;
+				width: 50%;
+}
+.other-div img	{
+				width:75%;
+				height:40%;
+				border-radius: 30px;
+				object-fit:fill;
 }
 
  }

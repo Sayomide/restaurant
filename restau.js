@@ -1,4 +1,3 @@
-
 let selectors = document.querySelector(".classselect");
 // let imgcontainer = document.querySelector(".image-container");
 let firstDiv = document.querySelectorAll(".image-div");
