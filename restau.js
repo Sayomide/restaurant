@@ -1,14 +1,14 @@
 let selectors = document.querySelector(".classselect");
-// let imgcontainer = document.querySelector(".image-container");
 let firstDiv = document.querySelectorAll(".image-div");
-// let othercontainer = document.querySelector(".other-container");
 let otherDiv = document.querySelectorAll(".other-div");
 let secDivs;
 let theValue;
 let firstdivName;
 let secondivName;
 let hideButton = document.querySelectorAll(".remove");
- 
+
+// For showing the categories of food either local or international 
+
 selectors.addEventListener("change", () => {
 	theValue = selectors.value;
 firstDiv.forEach(oneDiv => {
@@ -21,6 +21,7 @@ firstDiv.forEach(oneDiv => {
   });	
 });
 
+// For showing the otherdiv when press the main imagediv
 firstDiv.forEach(eachCon => {
 	eachCon.addEventListener("click", () => {
 		firstdivName = eachCon.getAttribute("name");
@@ -28,25 +29,25 @@ otherDiv.forEach(theachCon => {
 		secondivName = theachCon.getAttribute("name");
 		if (firstdivName == secondivName){
 	theachCon.style.display = "block";
+	// this doesnt seem to have a purpose though but i just leave it
 	theachCon.classList.add("theclass");
 }
 		});
 	});
 });
-
+// The hidebutton which hides the other selected element when add to cart
 hideButton.forEach(hidebtn => {
 	hidebtn.addEventListener("click", () => {
 		hidebtn.parentElement.style.display = "none";
 	})
 });
 
-
-let imageContainer = document.querySelector(".displayimage");
-let imagess = document.querySelectorAll(".imgs");
+let imgContainer = document.querySelector(".scrolls");
+let imagess = imgContainer.querySelectorAll("img");
 let myIndex = 0;
 
-
-caroussel();
+// image carousel for small screen
+if (window.matchMedia("(max-width: 768px)").matches) {
 setInterval(caroussel, 1000);
 function caroussel(){
 	for( let i=0; i < imagess.length; i++){
@@ -59,5 +60,11 @@ function caroussel(){
 		myIndex = 0;
 	}
 }
+}
+
+
+
+
+// add to cart Button, showing the side div
 
 
