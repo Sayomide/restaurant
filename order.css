@@ -6,6 +6,25 @@ html	{
 	padding: 0;
 	margin: 0;
 	}
+	
+.cartlogo 	{
+			background:black;
+			width:10%;
+			margin:15px;
+			margin-left:2px;
+			padding:10px;
+			text-align:center;
+			font-size:1rem;
+			color:white;
+			cursor:pointer;
+			font-weight:bold;
+			BORDER:NONE;
+			z-index:2;
+			border-radius:10px;
+			position:relative;
+
+}
+
 .selection	{
 			display:flex;
 			justify-content:center;
@@ -78,6 +97,7 @@ html	{
 				height:60%;
 				border-radius: 30px;
 				object-fit:fill;
+				margin-top:35px;
 }
 .other-div button {
 				display:flex;
@@ -92,10 +112,11 @@ html	{
 				color: white;
 				border-radius: 10px;
 }
-.other-div button:hover{
+.other-div button:hover, .cartlogo:hover {
 			background: white;
 			color: black;
 			border:1px solid black;
+			transition:.5s;
 }
 .other-div h1 {
 				font-size:5rem;
@@ -110,8 +131,23 @@ html	{
 		right:30px;
 		cursor:pointer;
 }
-
-
+.allprice {
+			font-size:1.5rem;
+			color:black;
+			background:white;
+}
+.mainprice {
+			font-size:2rem;
+}
+.besidediv {
+			display:flex;
+			flex-direction:column;
+			width:20%;
+			height:100vh;background:black;position:fixed;top:0;right:0;padding:5px;color:white;
+}
+.besidedivno {
+			display:none;
+}
 
 /*
 @media only screen and (max-width:1280px)
@@ -131,6 +167,7 @@ html	{
 				height:40%;
 				border-radius: 30px;
 				object-fit:fill;
+				margin-top:50px;
 }
 .other-div button {
 				display:flex;
@@ -143,6 +180,11 @@ html	{
 				font-size:1.5rem;
 				width: 70%;
 }
+.cartlogo 	{
+			width:20%;
+			font-size:1rem;
+}
+
   }
  
 
@@ -185,6 +227,10 @@ html	{
 				height:40%;
 				border-radius: 30px;
 				object-fit:fill;
+}
+.cartlogo 	{
+			width:20%;
+			font-size:.8rem;
 }
 	}
 

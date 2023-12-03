@@ -116,9 +116,11 @@ header .header	{
 					margin-top:10%;
 					border:2px solid black;
 					overflow:hidden;
+					transition: 3s;
 }
 .scrolls img{
 					width:33.4%;
+					transition:3s;
 }
 
 
