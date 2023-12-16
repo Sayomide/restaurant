@@ -142,11 +142,69 @@ html	{
 .besidediv {
 			display:flex;
 			flex-direction:column;
+			align-items:center;
 			width:20%;
-			height:100vh;background:black;position:fixed;top:0;right:0;padding:5px;color:white;
+			height:100vh;background:black;position:fixed;top:0;right:0;padding:5px;color:white;overflow:scroll;
 }
 .besidedivno {
 			display:none;
+}
+.newDiv	{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		width:80%;
+		height:250px;
+		background:gray;
+		color:white;
+		border-radius:10px;	
+		font-size:1.2rem;
+		margin: 10px auto;
+}
+.newImg {
+		width:70%;
+		height:70%;
+		border-radius:10px;
+		margin-top:5px;
+}
+.newName	{
+		margin:5px;
+}
+.newPrice	{
+		font-weight:bold;
+		margin:5px;
+}
+.footer	{
+		position:fixed;display:flex;flex-direction:column;justify-content:center;align-items:center;
+		bottom:10px;
+		background:lightblue;
+		width:18%;
+		margin-bottom:10px;
+}
+.footer p {
+	font-size:1.2rem;
+	margin:5px;
+}
+.footer button {
+		width:90%;
+		background:white;
+		padding:15px;
+		font-size:1.1rem;
+		border:none;
+		margin-bottom:20px;
+		margin-left:5px;
+		font-weight:bold;
+		transition: .5s;
+		text-align:center;
+}
+.footer button:hover {
+		letter-spacing:2px;
+		background:black;
+		color:white;
+}
+.footer p .am {
+		color:red;
 }
 
 /*
@@ -180,11 +238,18 @@ html	{
 				font-size:1.5rem;
 				width: 70%;
 }
+.besidediv {
+			width:30%;
+}
 .cartlogo 	{
 			width:20%;
 			font-size:1rem;
 }
-
+.footer {
+	width:28%;
+}
+.footer button {
+		margin-bottom:20px;
   }
  
 
@@ -231,6 +296,22 @@ html	{
 .cartlogo 	{
 			width:20%;
 			font-size:.8rem;
+}
+.besidediv {
+			width:50%;
+}
+.footer {
+		width:40%;
+}
+.footer button {
+			width:90%;
+		background:white;
+		padding:10px;
+		font-size:1rem;
+		border:none;
+		margin-bottom:20px;
+		font-weight:bold;
+		transition: .5s;
 }
 	}
 

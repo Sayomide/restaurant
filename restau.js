@@ -1,11 +1,3 @@
-/*
-// suppose to be in the other file
-let secDivs;
-let theValue;
-let firstdivName;
-let secondivName;
-*/
-
 let imgContainer = document.querySelector(".scrolls");
 let imagess;
 let myIndex = 0;
