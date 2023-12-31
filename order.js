@@ -35,14 +35,12 @@ otherDiv.forEach(theachCon => {
 	});
 });
 
-
 // The hidebutton which hides the selected element when add to cart
 hideButton.forEach(hidebtn => {
 	hidebtn.addEventListener("click", () => {
 		hidebtn.parentElement.style.display = "none";
 	})
 });
-
 
 // the toggle of the beside div used for adding
 let cartlogo = document.querySelector(".cartlogo");
@@ -52,21 +50,16 @@ cartlogo.addEventListener("click", ()=> {
 	besidediv.classList.toggle("besidedivno")
  });
 
-
 let newDiv;
 let newImg;
 let newPrice;
 let newName;
 let eachPrice;
-
-
 let total = 0;
-let onePrice2;
-//let normalPrice;
-//let normalPrice2;
+let pricesArray = [];
+let amount = document.querySelector(".am");
 
-
-// add to cart Button, showing the side div
+// add to cart Button, showing the side div and showing the total price
 let addcartBtn = document.querySelectorAll(".addcart");
 addcartBtn.forEach(eachaddcartBtn => {
 	eachaddcartBtn.addEventListener("click", function() {
@@ -86,59 +79,28 @@ addcartBtn.forEach(eachaddcartBtn => {
 		newPrice.classList.add("newPrice");
 		newName.classList.add("newName");
 		
+// newprice is the div and eachprice is the normal price		
 		newImg.setAttribute("src", eachaddcartBtn.parentElement.querySelector("img").src);
 		newName.innerHTML = eachaddcartBtn.parentElement.querySelector("h1").innerHTML;
-		eachPrice = eachaddcartBtn.parentElement.querySelector("b");
-		newPrice.innerText = `$${eachPrice.innerText}`;
-//		newPrice.innerText = `Price: $${eachPrice.innerText}`;
-//		normalPrice = newPrice.innerHTML; // just to hold
-//		normalPrice2 = parseInt(normalPrice.match(/\d+/)[0]);
-//		normalPrice2.classList.add("eachPrice");
-		updatePrice();
+		eachPrice = Number(eachaddcartBtn.parentElement.querySelector("b").innerText);
+		
+		pricesArray.push(eachPrice);
+		total = pricesArray.reduce((acc, currentPrice) => acc + currentPrice, 0);
+//		console.log("Total Price: $" + total);
+		newPrice.innerText = `Price: $${eachPrice}`;
+		amount.innerHTML = total;
 	});
 });
-//let mainPrice = document.querySelectorAll(".mainprice");
-let theinnerprice;
+  
+ 
 
 
-function updatePrice(){
-	console.log(eachPrice);
-	console.log(newPrice.innerText);
-	console.log(theinnerprice); 
-	theinnerprice = Number(newPrice.innerText.slice(1));
-//	console.log(normalPrice2 * 2);
-// amount.innerHTML = normalPrice2;	
-	console.log(theinnerprice);
-//	console.log(normalPrice2 * 6);	
-}
 
-let allPrice = document.querySelectorAll(".newPrice");
-
+// proceeding to payment when button is clicked
 let checkoutbtn = document.querySelector(".checkoutbtn");
-checkoutbtn.addEventListener("click", ()=> {
-	slicer();
-})
-
-
-// updating the amount of the goods selected everytime
-let amount = document.querySelector(".am");
-function slicer(){
-	allPrice.forEach(anotherprice => {
-		anothernewprice = anotherprice.innerText;
-		theinnerprice = Number(anothernewprice.slice(1));
-	total += anotherprice;
+checkoutbtn.addEventListener("click", () => {
+window.location.href = "https://www.google.com";
 });
-	 amount.innerHTML = total;	
-//	 console.log(total);
-}
-
-
-
-
-
-
-
-
 
 
 
