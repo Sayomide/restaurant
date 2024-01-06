@@ -99,11 +99,7 @@ addcartBtn.forEach(eachaddcartBtn => {
 // proceeding to payment when button is clicked
 let checkoutbtn = document.querySelector(".checkoutbtn");
 checkoutbtn.addEventListener("click", () => {
-window.location.href = "https://www.google.com";
+action="/create-checkout-session";
+method="POST";
 });
 
-
-
-// add the remove or cross sign to each added div 
-// when pressed it will remove the parentelement and constantly update the price or amount automatically
- 
