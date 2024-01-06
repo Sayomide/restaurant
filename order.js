@@ -95,11 +95,10 @@ addcartBtn.forEach(eachaddcartBtn => {
  
 
 
-
+/*
 // proceeding to payment when button is clicked
 let checkoutbtn = document.querySelector(".checkoutbtn");
 checkoutbtn.addEventListener("click", () => {
-action="/create-checkout-session";
-method="POST";
-});
 
+});
+*/
